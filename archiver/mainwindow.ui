@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1101</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="path_archive"/>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="opened_zip">
+        <column>
+         <property name="text">
+          <string>Имя</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Размер до архивации</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Размер после архивации</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Последнее изменение</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Комментарий</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1101</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="open_archive"/>
+    <addaction name="create_archive"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Команды</string>
+    </property>
+    <addaction name="add_files_to_archive"/>
+    <addaction name="unzip_to_folder"/>
+    <addaction name="zipping_folder"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="help"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="open_archive">
+   <property name="text">
+    <string>Открыть архив</string>
+   </property>
+  </action>
+  <action name="add_files_to_archive">
+   <property name="text">
+    <string>Добавить файлы в архив</string>
+   </property>
+   <property name="toolTip">
+    <string>add_files_to_archive</string>
+   </property>
+  </action>
+  <action name="help">
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+  </action>
+  <action name="create_archive">
+   <property name="text">
+    <string>Создать архив</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </action>
+  <action name="unzip_to_folder">
+   <property name="text">
+    <string>Разахивировать в папку</string>
+   </property>
+  </action>
+  <action name="zipping_folder">
+   <property name="text">
+    <string>Заархивирование папки</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

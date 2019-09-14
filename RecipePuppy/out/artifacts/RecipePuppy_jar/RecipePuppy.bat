@@ -1,0 +1,1 @@
+java -jar D:\RecipePuppy\out\artifacts\RecipePuppy_jar\RecipePuppy.jar
